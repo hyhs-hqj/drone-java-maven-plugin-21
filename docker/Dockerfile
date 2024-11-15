@@ -6,9 +6,6 @@ LABEL description="A Drone plugin to build Java applications using Apache Maven"
 LABEL MAVEN_VERSION=3.9
 LABEL JAVA_VERSION=21
 
-RUN apt-get update \
-  && apt-get install -y ca-certificates \
-  && rm -rf /var/lib/apt/lists/*
 
 # TODO: enable to run as non-root
 # RUN adduser --system --uid 1001 dev \
