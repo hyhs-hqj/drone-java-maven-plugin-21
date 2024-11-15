@@ -1,4 +1,4 @@
-IMAGE?=kameshsampath/drone-java-maven-plugin
+IMAGE?=hyhs/drone-java-maven-plugin-21
 TAG?=latest
 SHELL := bash
 CURRENT_DIR = $(shell pwd)
