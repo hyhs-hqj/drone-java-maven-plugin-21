@@ -1,10 +1,10 @@
-FROM docker.io/maven:3.8.5-openjdk-11-slim
-LABEL org.opencontainers.image.source https://github.com/kameshsampath/drone-java-maven-plugin
-LABEL org.opencontainers.image.authors="Kamesh Sampath<kamesh.sampath@hotmail.com>"
+FROM docker.io/library/maven:3.9-eclipse-temurin-21-alpine
+LABEL org.opencontainers.image.source https://github.com/hyhs-hqj/drone-java-maven-plugin-21
+LABEL org.opencontainers.image.authors="Gavin"
 
 LABEL description="A Drone plugin to build Java applications using Apache Maven"
-LABEL MAVEN_VERSION=3.8.5
-LABEL JAVA_VERSION=11
+LABEL MAVEN_VERSION=3.9
+LABEL JAVA_VERSION=21
 
 RUN apt-get update \
   && apt-get install -y ca-certificates \
